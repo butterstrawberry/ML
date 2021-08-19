@@ -1,10 +1,8 @@
-from os import access
 import torch
 
 from torch import nn, optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
-from torchvision.transforms.functional import pad
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
