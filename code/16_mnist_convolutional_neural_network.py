@@ -55,7 +55,7 @@ class CNN(nn.Module):
 
         self.fc = nn.Linear(7 * 7 * 64, 10, bias=True) # Full Connected Layers
 
-        nn.init.xavier_uniform_(self.fc.weight) # Reset Weight
+        nn.init.xavier_uniform_(self.fc.weight) # Only Full Connected Layers Reset Weight
 
     def forward(self, x):
         out = self.layer1(x)
